@@ -36,6 +36,8 @@ img {
   max-width: 428px;
   padding-right: 16px;
   padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
   outline: 2px solid red;
   outline-offset: -2px;
 }
@@ -51,8 +53,6 @@ img {
     max-width: 1158px;
     padding-right: 15px;
     padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 /**
@@ -883,10 +883,7 @@ img {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-close-btn:hover,
-.menu-close-btn:focus {
-  background-color: var(--link-color-hover);
-}
+
 .menu-close-btn .menu-close-icon {
   fill: var(--nav-item-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -904,6 +901,10 @@ img {
 .menu-toggle:hover,
 .menu-toggle:focus {
   background-color: rgba(0, 0, 0, 0.1);
+}
+.menu-close-btn:hover,
+.menu-close-btn:focus {
+  background-color: var(--link-color-hover);
 }
 
 .menu-container {
