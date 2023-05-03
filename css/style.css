@@ -882,7 +882,10 @@ img {
   border-radius: 50%;
   outline: none;
 }
-.menu-close-btn {
+.menu-container .menu-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
   background-color: rgba(231, 233, 252, 0.1);
@@ -923,10 +926,11 @@ img {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 80px 35px 40px 40px;
   background-color: var(--background-color-one);
   z-index: 999;
-
+  outline: 2px solid red;
+  outline-offset: -2px;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -975,15 +979,21 @@ img {
   margin-bottom: 40px;
 }
 .mobile-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
   margin-bottom: 48px;
 }
-.mobile-item {
-  margin-bottom: 40px;
-}
-.mobile-item:nth-child(2) {
-  margin-bottom: 0;
-}
+
 .mobile-tel {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: var(--logo-color);
 }
 .mobile-mail {
