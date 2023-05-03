@@ -88,9 +88,17 @@ img {
   text-transform: uppercase;
   color: var(--logo-color);
   margin-right: auto;
-  /* margin-right: 76px; */
 }
-
+@media only screen and (min-width: 768px) {
+  .logo {
+    margin-right: 120px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .logo {
+    margin-right: 76px;
+  }
+}
 .logo.link {
   text-decoration: none;
 }
