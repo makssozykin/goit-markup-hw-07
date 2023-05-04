@@ -208,7 +208,7 @@ img {
 }
 @media only screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    max-width: 1157px;
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -227,6 +227,7 @@ img {
   color: var(--background-color-one);
   margin: 0 auto;
   margin-bottom: 72px;
+  width: 320px;
 }
 @media only screen and (min-width: 768px) {
   .hero-title {
@@ -234,6 +235,7 @@ img {
     line-height: 1.07;
     text-transform: none;
     margin-bottom: 72px;
+    width: 496px;
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -242,6 +244,7 @@ img {
     line-height: 1.07;
     text-transform: none;
     margin-bottom: 48px;
+    width: 496px;
   }
 }
 .hero-btn {
@@ -537,7 +540,7 @@ img {
     text-align: left;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1158px) {
   .title-height-three {
     font-weight: 500;
     font-size: 20px;
@@ -1091,6 +1094,14 @@ img {
   color: var(--logo-color);
 }
 .mobile-mail {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin: 0 auto;
   color: var(--address-list-color);
 }
 .mobile-socials {
