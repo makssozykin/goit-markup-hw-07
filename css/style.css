@@ -571,7 +571,6 @@ img {
   .features-list {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 738px;
     row-gap: 72px;
     column-gap: 24px;
   }
