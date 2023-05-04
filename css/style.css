@@ -190,7 +190,8 @@ img {
   |============================
 */
 .hero {
-  max-width: 1440px;
+  min-width: 320px;
+  max-width: 428px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--nav-item-color);
@@ -202,19 +203,49 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 188px 0;
+  padding: 112px 0px;
   text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .hero {
+    max-width: 1440px;
+    padding: 188px 0;
+  }
 }
 .hero-title {
   font-family: "Roboto", sans-serif;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: var(--background-color-one);
-  max-width: 496px;
+  max-width: 320px;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    text-transform: none;
+    margin-bottom: 72px;
+    max-width: 496px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    text-transform: none;
+    margin-bottom: 48px;
+    max-width: 496px;
+  }
 }
 .hero-btn {
   font-family: "Roboto", sans-serif;
@@ -469,25 +500,17 @@ img {
   |============================
 */
 .features {
-  padding: 120px 0;
+  padding: 96px 0;
 }
-.title-height-three {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--nav-item-color);
-  margin: 0 auto;
-  margin-bottom: 8px;
+@media only screen and (min-width: 768px) {
+  .features {
+    padding: 96px 0;
+  }
 }
-.item-desc {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--address-list-color);
-  margin: 0;
+@media only screen and (min-width: 1158px) {
+  .features {
+    padding: 120px 0;
+  }
 }
 .title-height-two {
   font-family: "Roboto", sans-serif;
@@ -500,21 +523,96 @@ img {
   margin: 0 auto;
   margin-bottom: 72px;
 }
+.title-height-three {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--nav-item-color);
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+@media only screen and (min-width: 768px) {
+  .title-height-three {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .title-height-three {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: none;
+  }
+}
+.item-desc {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--address-list-color);
+  margin: 0;
+}
+@media only screen and (min-width: 1158px) {
+  .item-desc {
+    font-weight: 400;
+  }
+}
 .features-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
-.features-icons {
-  display: flex;
-  height: 112px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px;
-  background-color: var(--pf-btn-color);
-  border-radius: 4px;
+@media only screen and (min-width: 768px) {
+  .features-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 738px;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .features-list {
+    flex-direction: row;
+    gap: 24px;
+  }
 }
 .features-item {
-  width: calc((100% - 72px) / 4);
+  height: calc((100% - 216px) / 4);
+}
+@media only screen and (min-width: 768px) {
+  .features-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .features-item {
+    width: calc((100% - 72px) / 4);
+  }
+}
+.features-icons {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .features-icons {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .features-icons {
+    display: flex;
+    height: 112px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    background-color: var(--pf-btn-color);
+    border-radius: 4px;
+  }
 }
 
 /**
