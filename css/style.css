@@ -758,6 +758,12 @@ img {
   row-gap: 72px;
   column-gap: 16px;
 }
+@media only screen and (max-width: 412px) {
+  .customers-list {
+    row-gap: calc(var(--indent) * 3);
+    column-gap: 44px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .customers-list {
     justify-content: center;
@@ -775,7 +781,7 @@ img {
   width: 190px;
   height: 88px;
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 412px) {
   .customer-logo {
     width: 168px;
   }
