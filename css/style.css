@@ -327,14 +327,26 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  overflow-y: scroll;
   transform: translate(-50%, -50%) rotate(0) scale(1);
-  width: 408px;
+  min-width: 408px;
+  max-height: 90%;
   height: 584px;
   background-color: var(--modal-back-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 500ms ease-in 200ms, opacity 500ms ease-in 200ms;
+}
+@media only screen and (max-width: 767px) {
+  .modal {
+    width: 392px;
+  }
+}
+@media only screen and (max-width: 1157px) {
+  .modal {
+    height: 586px;
+  }
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) rotate(360deg) scale(0.5);
@@ -534,20 +546,10 @@ img {
   |============================
 */
 .features {
-  /* min-width: 320px;
-  max-width: 428px; */
   padding: 120px 0;
-  /* margin-left: auto;
-  margin-right: auto; */
 }
-/* @media only screen and (min-width: 768px) {
-  .features {
-    max-width: 768px;
-  }
-} */
 @media only screen and (max-width: 1157px) {
   .features {
-    /* max-width: 1440px; */
     padding: 96px 0;
   }
 }
