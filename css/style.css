@@ -672,9 +672,20 @@ img {
   background-color: var(--pf-btn-color);
   padding: 120px 0;
 }
-@media only screen and (max-width: 1157px) {
+@media only screen and (max-width: 767px) {
   .team {
-    padding: 96px 0;
+    padding: 96px 0px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .team {
+    padding: 96px 92px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .team-container {
+    padding: 0 82px;
   }
 }
 .team-list {
@@ -701,18 +712,33 @@ img {
   width: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 .team-member-cont {
-  padding: 32px 0;
+  padding: 32px 16px;
   border-radius: 0px 0px 4px 4px;
 }
+/* @media only screen and (min-width: 768px) {
+  .team-member-cont {
+    padding: 32px 0;
+  }
+} */
 .team-member-cont > .title-height-three,
 .team-member-cont > .item-desc {
   text-align: center;
   margin-bottom: 8px;
 }
+.team-member-cont > .title-height-three {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: none;
+}
+.team-member-cont > .item-desc {
+  font-weight: 400;
+}
 .member-icon-list {
   display: flex;
   gap: 24px;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
 }
 .icon-member-item {
@@ -758,14 +784,14 @@ img {
   row-gap: 72px;
   column-gap: 16px;
 }
-@media only screen and (max-width: 427px) {
+/* @media only screen and (max-width: 427px) {
   .customers-list {
     min-width: 355px;
     max-width: 427px;
     row-gap: calc(var(--indent) * 3);
     column-gap: 12px;
   }
-}
+} */
 @media only screen and (min-width: 768px) {
   .customers-list {
     justify-content: center;
@@ -783,11 +809,11 @@ img {
   width: 190px;
   height: 88px;
 }
-@media only screen and (max-width: 427px) {
+/* @media only screen and (max-width: 427px) {
   .customer-logo {
     width: 158px;
   }
-}
+} */
 @media only screen and (min-width: 768px) {
   .customer-logo {
     width: 168px;
@@ -843,13 +869,12 @@ img {
   flex-wrap: wrap;
   row-gap: 72px;
   justify-content: center;
-  padding: 0 15px;
 }
 @media only screen and (min-width: 768px) {
   .footer > .container {
     column-gap: 24px;
     justify-content: flex-start;
-    padding-left: 93px;
+    padding-left: 92px;
     padding-right: 16px;
   }
 }
