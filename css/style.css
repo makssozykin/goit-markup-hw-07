@@ -776,14 +776,14 @@ img {
   background-color: var(--pf-btn-color);
   padding: 120px 0;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1157px) {
   .team {
     padding: 96px 0px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
-  .team {
-    padding: 96px 92px;
+  .team-container {
+    padding: 0 108px;
   }
 }
 
@@ -1143,13 +1143,40 @@ img {
   |============================
 */
 .portfolio {
-  padding: 96px 0 120px;
+  padding: 48px 0;
+}
+@media only screen and (min-width: 768px) {
+  .portfolio {
+    padding: 64px 0 96px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .portfolio {
+    padding: 96px 0 120px;
+  }
 }
 .pf-btn-list {
   display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
+  flex-wrap: wrap;
+  /* justify-content: flex-start; */
+  column-gap: 24px;
+  row-gap: 16px;
+  width: 263px;
+  margin-bottom: 48px;
+}
+@media only screen and (min-width: 768px) {
+  .pf-btn-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 64px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .pf-btn-list {
+    margin-bottom: 72px;
+  }
 }
 .pf-btn {
   font-family: "Roboto", sans-serif;
@@ -1162,11 +1189,16 @@ img {
   cursor: pointer;
   border: 1px solid var(--pf-btn-brd-color);
   border-radius: 4px;
-  padding: 12px 24px;
+  padding: 8px 16px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media only screen and (min-width: 768px) {
+  .pf-btn {
+    padding: 12px 24px;
+  }
 }
 .pf-btn:hover,
 .pf-btn:focus {
@@ -1182,8 +1214,28 @@ img {
   column-gap: 24px;
   row-gap: 48px;
 }
+@media only screen and (min-width: 768px) {
+  .pf-list {
+    row-gap: 72px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .pf-list {
+    row-gap: 48px;
+  }
+}
 .pf-item {
-  width: calc((100% - 48px) / 3);
+  width: calc((100% - 24px * (1 - 1)) / 1);
+}
+@media only screen and (min-width: 768px) {
+  .pf-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .pf-item {
+    width: calc((100% - 48px) / 3);
+  }
 }
 .pf-item-link {
   display: block;

@@ -11,7 +11,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <!-- Animate on scroll -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Fonts -->
@@ -58,6 +58,15 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Section -->
@@ -87,7 +96,7 @@
               <a class="pf-item-link link" href="">
                 <div class="pf-item-box">
                   <img
-                    src="./images/portfolio/card1.jpg"
+                    src="./images/portfolio/card1_desk@1x.jpg"
                     alt="BankingApp"
                     width="360"
                     height="300"
@@ -113,7 +122,7 @@
                 <div class="pf-item-box">
                   <img
                     class="pf-item-img"
-                    src="./images/portfolio/card2.jpg"
+                    src="./images/portfolio/card2_tab@1x.jpg"
                     alt="CashlessPayment"
                     width="360"
                     height="300"
@@ -137,7 +146,7 @@
                 <div class="pf-item-box">
                   <img
                     class="pf-item-img"
-                    src="./images/portfolio/card3.jpg"
+                    src="./images/portfolio/card3_desk@1x.jpg"
                     alt="MeditationApp"
                     width="360"
                     height="300"
@@ -161,7 +170,7 @@
                 <div class="pf-item-box">
                   <img
                     class="pf-item-img"
-                    src="./images/portfolio/card4.jpg"
+                    src="./images/portfolio/card4_desk@1x.jpg"
                     alt="TaxiService"
                     width="360"
                     height="300"
@@ -185,7 +194,7 @@
                 <div class="pf-item-box">
                   <img
                     class="pf-item-img"
-                    src="./images/portfolio/card5.jpg"
+                    src="./images/portfolio/card5_desk@1x.jpg"
                     alt="ScreenIllustrations"
                     width="360"
                     height="300"
@@ -209,7 +218,7 @@
                 <div class="pf-item-box">
                   <img
                     class="pf-item-img"
-                    src="./images/portfolio/card6.jpg"
+                    src="./images/portfolio/card6_desk@1x.jpg"
                     alt="OnlineCourses"
                     width="360"
                     height="300"
@@ -233,7 +242,7 @@
                 <div class="pf-item-box">
                   <img
                     class="pf-item-img"
-                    src="./images/portfolio/card7.jpg"
+                    src="./images/portfolio/card7_desk@1x.jpg"
                     alt="InstagramStoriesConcept"
                     width="360"
                     height="300"
@@ -257,7 +266,7 @@
                 <div class="pf-item-box">
                   <img
                     class="pf-item-img"
-                    src="./images/portfolio/card8.jpg"
+                    src="./images/portfolio/card8_desk@1x.jpg"
                     alt="OrganicFood"
                     width="360"
                     height="300"
@@ -281,7 +290,7 @@
                 <div class="pf-item-box">
                   <img
                     class="pf-item-img"
-                    src="./images/portfolio/card9.jpg"
+                    src="./images/portfolio/card9_desk@1x.jpg"
                     alt="FreshCoffee"
                     width="360"
                     height="300"
@@ -395,7 +404,101 @@
         </div>
       </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./js/animation.js"></script>
+    <!-- Mobile-menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle menu-close-btn js-close-menu">
+        <svg class="menu-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a class="link" href="./index.html">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="link" href="./portfolio.html" class="link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="link" href="" class="link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li class="mobile-item">
+          <a class="link" href="tel:+110001111111">
+            <span class="mobile-tel">+11 (000) 111-11-11</span>
+          </a>
+        </li>
+        <li class="mobile-item">
+          <a class="link" href="mailto:info@devstudio.com">
+            <span class="mobile-mail">info@devstudio.com</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="mobile-socials list">
+        <li class="icon-footer-item">
+          <a
+            class="icon-link link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Instagram icon"
+          >
+            <svg class="icon-footer" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="icon-footer-item">
+          <a
+            class="icon-link link"
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Twitter icon"
+          >
+            <svg class="icon-footer" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="icon-footer-item">
+          <a
+            class="icon-link link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Facebook icon"
+          >
+            <svg class="icon-footer" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="icon-footer-item">
+          <a
+            class="icon-link link"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Linkedin icon"
+          >
+            <svg class="icon-footer" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/animation.js"></script> -->
   </body>
 </html>
