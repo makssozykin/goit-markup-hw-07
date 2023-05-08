@@ -782,16 +782,16 @@ img {
     padding: 96px 0px;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 427px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .team > .team-container {
-    width: 264px;
+    max-width: 428px;
   }
 }
-@media only screen and (min-width: 428px) and (max-width: 767px) {
+/* @media only screen and (min-width: 428px) and (max-width: 767px) {
   .team-container {
-    width: calc(100% - 33px);
+    width: 100px;
   }
-}
+} */
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .team-container {
     width: 582px;
@@ -812,7 +812,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: calc(var(--indent) * 3);
+  row-gap: calc(var(--indent) * 3);
 }
 @media only screen and (min-width: 768px) {
   .team-list {
@@ -831,6 +831,11 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   width: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+@media only screen and (max-width: 767px) {
+  .team-member {
+    width: calc(100% - 132px);
+  }
 }
 .team-member-cont {
   max-width: 264px;
@@ -863,9 +868,19 @@ img {
 }
 .member-icon-list {
   display: flex;
-  gap: 24px;
+  gap: 8px;
   justify-content: space-between;
   align-items: center;
+}
+@media only screen and (min-width: 380px) and (max-width: 427px) {
+  .member-icon-list {
+    gap: 14px;
+  }
+}
+@media only screen and (min-width: 428px) {
+  .member-icon-list {
+    gap: 24px;
+  }
 }
 
 .member-icon-link {
@@ -1084,12 +1099,12 @@ img {
 .subscribe {
   display: flex;
   align-items: center;
-  gap: 24px;
+  column-gap: 24px;
 }
 @media only screen and (max-width: 767px) {
   .subscribe {
     flex-direction: column;
-    gap: 16px;
+    row-gap: 16px;
     justify-content: center;
   }
 }
@@ -1179,8 +1194,7 @@ img {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--background-color-one);
-  margin-bottom: 16px;
-  margin-top: 0;
+  margin: 0 0 16px 0;
 }
 @media only screen and (max-width: 767px) {
   .footer-media {
