@@ -433,7 +433,7 @@ img {
   left: 50%;
   overflow-y: scroll;
   transform: translate(-50%, -50%) rotate(0) scale(1);
-  min-width: 408px;
+  width: calc(100% - 30px);
   max-height: 90%;
   height: 584px;
   background-color: var(--modal-back-color);
@@ -442,15 +442,15 @@ img {
   border-radius: 4px;
   transition: transform 500ms ease-in 200ms, opacity 500ms ease-in 200ms;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 428px) {
   .modal {
-    min-width: 392px;
-    max-width: 100%;
+    max-width: 392px;
+    height: 586px;
   }
 }
-@media only screen and (max-width: 1157px) {
+@media only screen and (min-width: 768px) {
   .modal {
-    height: 586px;
+    max-width: 408px;
   }
 }
 .backdrop.is-hidden .modal {
